@@ -1,6 +1,6 @@
-// $(document).ready(function(){
-// 	getWeather();
-// })
+$(document).ready(function(){
+	getWeather();
+})
 
 function getWeather(searchQuery) {
 	var url = "https://api.openweathermap.org/data/2.5/weather?q="+searchQuery+"&appid="+apiKey;

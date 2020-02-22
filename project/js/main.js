@@ -42,9 +42,34 @@ $document.ready(function (){
 })
 
 function getPokemonA(){
-	Math.floor((Math.random() * 151) + 1);
+	var pokemonA = Math.floor((Math.random() * 151) + 1);
+	var url ="https:///api/v2/pokemon/"+pokemonA;
+	$.ajax(url, {
+		success: function(data) {
+			$(".nameA").text.(data.name);
+		},
+		error: function(error){
+			$(".error-message").text("An error occured");
+		}
+	})
 }
 
 function getPokemonB(){
-	Math.floor((Math.random() * 151) + 1);
+	var pokemonB = Math.floor((Math.random() * 151) + 1);
+	var url ="https:///api/v2/pokemon/"+pokemonB;
+	$.ajax(url, {
+		success: function(data) {
+			$(".nameB").text.(data.name);
+		},
+		error: function(error){
+			$(".error-message").text("An error occured");
+		}
+	})
 }
+
+
+
+
+
+
+

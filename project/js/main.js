@@ -76,6 +76,7 @@ P.getPokemonByName('eevee') // with Promise
     .then(function(response) {
       console.log(response);
     });
+    
 
 
 

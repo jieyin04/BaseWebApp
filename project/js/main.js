@@ -46,7 +46,7 @@ function getPokemonA(){
 	var url ="https:///api/v2/pokemon/"+pokemonA;
 	$.ajax(url, {
 		success: function(data) {
-			$(".nameA").text.(data.name);
+			$(".nameA").text(data.name);
 		},
 		error: function(error){
 			$(".error-message").text("An error occured");
@@ -59,7 +59,7 @@ function getPokemonB(){
 	var url ="https:///api/v2/pokemon/"+pokemonB;
 	$.ajax(url, {
 		success: function(data) {
-			$(".nameB").text.(data.name);
+			$(".nameB").text(data.name);
 		},
 		error: function(error){
 			$(".error-message").text("An error occured");

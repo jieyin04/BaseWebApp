@@ -36,7 +36,7 @@
   
 // }
 
-$document.ready(function (){
+$(document).ready(function (){
 	getPokemonA();
 	getPokemonB();
 })
